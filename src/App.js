@@ -75,6 +75,7 @@ const categories = [
    const index = newProducts.findIndex((p) => p.id === id);
    if (newProducts[index].count > 0)
      newProducts[index].count = newProducts[index].count - 1;
+     newProducts[index].price = newProducts[index].count * newProducts[index].price;
    // setState
    setProducts(newProducts);
 
